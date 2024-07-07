@@ -4,7 +4,12 @@ body {
 #hero {
   max-width: 1920px;
   height: 936px;
-  background-image: url(../assets/hero-bg.png);
+  background-image: linear-gradient(
+      0deg,
+      rgb(16, 16, 16) -19.5%,
+      rgba(16, 16, 16, 0) 100%
+    ),
+    url(../assets/hero-bg.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -25,4 +30,34 @@ body {
   text-align: center;
   font-size: 32px;
   line-height: normal;
+  margin-bottom: 16px;
+}
+#hero .hero-container .title {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  font-size: 64px;
+  line-height: 80px;
+}
+#hero .hero-container .moto {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.btn-primary {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding: 21px;
+  border-radius: 10px;
+  border: none;
+  background-color: #52c303;
+}
+.header-btn {
+  text-align: center;
 }
